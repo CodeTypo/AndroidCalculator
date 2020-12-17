@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:rowCount="1"
+    android:layout_margin="2dp">
+
+    <!-- First line of buttons -->
+
+    <android.widget.Button
+        android:id="@+id/zero"
+        android:text="0"
+        android:layout_width="0dp"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="2"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/dot"
+        android:text="."
+        android:layout_width="0dp"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/equals"
+        android:text="="
+        android:layout_width="0dp"
+        style="@style/OrangeButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="operation_btn_clicked"
+
+        />
+
+
+
+
+
+</GridLayout>

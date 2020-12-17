@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:rowCount="4"
+    android:layout_margin="2dp"
+    >
+
+    <!-- First line of buttons -->
+
+    <android.widget.Button
+        android:id="@+id/clear"
+        android:text="AC"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="operation_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/sign_swap"
+        android:text="+/-"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="operation_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/percent"
+        android:text="%"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="operation_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/divide"
+        android:text="/"
+        style="@style/OrangeButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="3"
+        android:layout_row="0"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="operation_btn_clicked"
+        />
+
+    <!-- Second line of buttons -->
+
+    <android.widget.Button
+        android:id="@+id/seven"
+        android:text="7"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/eight"
+        android:text="8"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/nine"
+        android:text="9"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/multiply"
+        android:text="*"
+        style="@style/OrangeButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="operation_btn_clicked"
+        />
+
+    <!-- Third line of buttons -->
+
+    <android.widget.Button
+        android:id="@+id/four"
+        android:text="4"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/five"
+        android:text="5"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/six"
+        android:text="6"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="2"
+        android:layout_row="2"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/subtract"
+        android:text="-"
+        style="@style/OrangeButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="3"
+        android:layout_row="2"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="operation_btn_clicked"
+        />
+
+    <!-- Fourth line of buttons -->
+
+    <android.widget.Button
+        android:id="@+id/one"
+        android:text="1"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/two"
+        android:text="2"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/three"
+        android:text="3"
+        style="@style/GrayButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="numeric_btn_clicked"
+        />
+
+    <android.widget.Button
+        android:id="@+id/sum"
+        android:text="+"
+        style="@style/OrangeButtons"
+        android:layout_columnWeight="1"
+        android:layout_column="3"
+        android:layout_row="3"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="operation_btn_clicked"
+        />
+</GridLayout>
