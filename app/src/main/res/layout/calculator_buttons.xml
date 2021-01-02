@@ -2,8 +2,8 @@
 
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:columnCount="4"
     android:rowCount="4"
     android:layout_margin="2dp"
@@ -22,6 +22,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="operation_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -35,6 +36,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="operation_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -48,6 +50,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="operation_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -61,6 +64,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="operation_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <!-- Second line of buttons -->
@@ -76,6 +80,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -89,6 +94,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -102,6 +108,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -115,6 +122,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="operation_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <!-- Third line of buttons -->
@@ -130,6 +138,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -143,6 +152,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -156,6 +166,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -169,6 +180,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="operation_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <!-- Fourth line of buttons -->
@@ -184,6 +196,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -197,6 +210,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -210,6 +224,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="numeric_btn_clicked"
+        android:layout_width="0dp"
         />
 
     <android.widget.Button
@@ -223,5 +238,6 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:onClick="operation_btn_clicked"
+        android:layout_width="0dp"
         />
 </GridLayout>

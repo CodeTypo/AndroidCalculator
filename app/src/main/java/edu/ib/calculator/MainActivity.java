@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    public TextView display;
+    public EditText display;
+    public TextView result;
 
     private boolean     dotPressed              = false;            //A flag monitoring the '.' sign usage
     private boolean     zeroPressed             = false;            //A flag monitoring the '0' input by user. inputs like: 00010 aren't allowed
@@ -22,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
-        display = (TextView) findViewById(R.id.tv_userInput);
+        display = (EditText) findViewById(R.id.tv_userInput);
+        result = (TextView) findViewById(R.id.tv_userResult);
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -147,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
     public void clear(){
         calculator.reset(); //A Calculator object's reset() method is being called
         display.setText("");    //The display is being cleared
+        result.setText("");
         dotPressed = zeroPressed = operationPerformed = percentFlag = operationSelected = false; //All bools set to FALSE
     }
 
@@ -161,7 +165,8 @@ public class MainActivity extends AppCompatActivity {
         //Calling the calculator's performOperation(percentFlag) method and storing its return value in 'value' variable
         Double value = calculator.performOperation(percentFlag);
         //Prints the value on the display
-        display.setText(String.valueOf(value));
+        display.setText("");
+        result.setText(String.valueOf(value));
         operationPerformed = true;
     }
 
